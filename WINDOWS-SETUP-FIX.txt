@@ -1,0 +1,25 @@
+MixForge Studio - Windows setup fix
+
+This update supports existing 64-bit standard Python 3.11, 3.12, and 3.13.
+You do not need another Python installation when you have a supported version.
+
+1. Close any old setup window.
+2. Extract ALL files from MixForge-Windows-Setup-Fix.zip INTO your existing
+   MixForge-Studio folder (the folder containing setup-windows.bat).
+3. Allow setup/launch files to be replaced. Keep tools as a subfolder.
+4. Keep ffmpeg.exe, ffprobe.exe, and your data folder where they are.
+5. Double-click setup-windows.bat, then launch-windows.bat when setup completes.
+
+If setup cannot automatically find your PyCharm Python:
+- Open PyCharm > Settings > Project > Python Interpreter.
+- Copy the interpreter's full python.exe path.
+- Paste it into setup when prompted.
+Setup creates a separate MixForge virtual environment and does not install
+packages into your other PyCharm project.
+
+The prebuilt interface is included in the original application. Node.js is
+only needed when the interface is missing or you want to rebuild it.
+The small setup patch does not include the full application or FFmpeg.
+
+Python 3.13 backend tests passed on Linux, and Windows x86-64 binary wheels
+were verified. The Windows launch scripts have not run on a Windows host.

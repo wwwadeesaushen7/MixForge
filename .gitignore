@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+data/
+work/
+*.tsbuildinfo
+
+.openai/
+.env
+.env.*
+!.env.example
+*.log
+ffmpeg.exe
+ffprobe.exe

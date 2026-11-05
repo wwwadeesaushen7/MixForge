@@ -1,0 +1,37 @@
+MixForge Studio 1.3 update - track mixer, loop playback, range exports and repairs
+
+1. Stop MixForge by pressing Ctrl+C in its running terminal window.
+2. Open MixForge-Studio-Update.zip. Copy ALL its contents into your EXISTING
+   MixForge-Studio folder (the one containing launch-windows.bat).
+3. Allow application files to be replaced. Keep the backend, dist, public, src,
+   and tools folders as folders; do not flatten their contents.
+4. Keep your data folder, .venv, ffmpeg.exe, and ffprobe.exe. The update does
+   not include, overwrite, or delete those files.
+5. Run launch-windows.bat, then press Ctrl+F5 in the browser if it was open.
+   If initial setup has not finished yet, run setup-windows.bat first.
+
+No new Python installation is needed. Existing Python 3.11-3.13 is supported.
+The new features use the existing dependencies. The prebuilt UI is included;
+Node.js is not needed just to apply the update.
+
+Open Sound FX in the library. Keys 1-8 audition the eight original sounds.
+Shift + 1-8 adds a sound at the playhead; only timeline/attached sounds export.
+Select a transition to choose its sound, volume, and timing offset.
+Press ? or click the keyboard button for all shortcuts.
+
+Myinstants: Search or paste a public sound/MP3 URL inside Sound FX. Search uses
+its official API with limited anonymous requests. Downloaded sounds are cached
+locally. If Myinstants is unavailable, use Download MP3 on its website and
+Upload a sound effect in MixForge. Original built-in effects work offline.
+
+New in 1.2: Select / Cut / Hand tools; selection boxes and Shift-click groups;
+group dragging; right-click menus; copy/cut/paste; draggable ruler/playhead;
+larger trim handles; real fade handles; snap guides; zoom around the pointer;
+Fit and Zoom to selection. Click Mouse & touchpad for the complete guide.
+V / B / H switches tools. Ctrl+A selects all timeline clips.
+Scrolling/panning/zooming changes only the view, not your arrangement.
+
+New in 1.3: track volume/pan/mute/solo; loop In/Out and L shortcut;
+selected-range WAV/MP3 export; source reconnection after moving data.
+The FULL ZIP has an outer MixForge-Studio folder. Copy its CONTENTS into the
+existing app folder, next to ffmpeg.exe, rather than nesting another app folder.
